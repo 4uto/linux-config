@@ -1,0 +1,55 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontWeight": "500",
+    "window.zoomLevel": 2,
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira code",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "search.exclude": {
+        "**/node_modules": false
+    },
+    "search.useIgnoreFiles": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "files.autoSave": "afterDelay",
+    "update.mode": "none",
+    "files.trimTrailingWhitespace": true,
+    "editor.renderIndentGuides": false,
+    "editor.matchBrackets": false,
+    "javascript.validate.enable": true,
+    // "scoper.highlightColor": "#475563"
+    // "scoper.highlightColor": "rgb(255,223,208)",
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.fontFamily": "Dank Mono",
+    "workbench.colorCustomizations" : {
+        "terminal.foreground" : "#2d2e04",
+        "terminal.background" : "#e9f5f2",
+        "editor.background": "#FFF1FF",
+        "editorBracketMatch.background": "#f008",
+        "editorBracketMatch.border": "#f00"
+        // "editor.foreground": "#00BCD4",
+
+    },
+    "eslint.autoFixOnSave": false,
+    "breadcrumbs.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.fontSize": 12,
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Visual Studio Light"
+    // "[json]": {
+    //     "editor.defaultFormatter": "vscode.json-language-features"
+    // },
+    // "[html]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+    // "[javascript]": {
+    //     "editor.defaultFormatter": "vscode.typescript-language-features"
+    // },
+    // "[typescript]": {
+    //     "editor.defaultFormatter": "vscode.typescript-language-features"
+    // }
+}

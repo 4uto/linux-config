@@ -1,0 +1,42 @@
+alias c="code ."
+alias rm="trash"
+
+# Directory
+alias cd1="cd .."
+alias cd2="cd ../.."
+alias cd3="cd ../../.."
+alias wd="pwd"
+
+
+# Git
+alias gg="git reset --hard HEAD && git clean -fd"
+alias cs='printf "\033c"'
+alias gcod="git checkout develop"
+alias gs="git status"
+alias gg="git reset --hard HEAD && git clean -fd"
+alias amen="git commit --amend"
+alias men="git commit --amend --no-edit"
+alias gbD='git branch | egrep -v "(master|\*)" | xargs git branch -D'
+alias fpush="gaa;men;ggpush -f"
+
+alias gl="git log --all --oneline --decorate --graph"
+alias glog="git log --color --graph --date=iso --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset\" --abbrev-commit --"
+alias gtree="git log --graph --abbrev-commit --decorate --date=relative --format=format:\"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)\" --all"
+alias gla="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all"
+alias gls="git log --stat --pretty=short --graph"
+alias glogall="git log --graph --full-history --all --pretty=format:\"%h%x09%d%x20%s\""
+alias gtool="git difftool"
+
+alias glist='for ref in $(git for-each-ref --sort=-committerdate --format="%(refname)" refs/heads/ refs/remotes ); do git log -n1 $ref --pretty=format:"%Cgreen%cr%Creset %C(yellow)%d%Creset %C(bold blue)<%an>%Creset%n" | cat ; done | awk '"'! a["'$0'"]++'"
+alias gld="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
+
+# AWS
+alias cost="aws ce get-cost-and-usage --time-period Start=2019-01-01,End=2019-01-31 --granularity MONTHLY --metrics \"UnblendedCost\""
+
+
+# Miscellaneous
+alias weather="curl http://wttr.in/hanoi"
+alias rl="exec $SHELL -l"
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
