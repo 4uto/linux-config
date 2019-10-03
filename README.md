@@ -31,6 +31,12 @@ fortune | cowsay -f tux
 #### Install Nodejs
 #### Custom npm prefix and scope
 
+```
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+export PATH=~/.npm-global/bin:$PATH
+```
+
 ### Docker
 ### Docker-compose
 ### K8s
